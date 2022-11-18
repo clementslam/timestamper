@@ -8,6 +8,6 @@ RUN python -m pip install --trusted-host pypi.python.org --trusted-host files.py
 
 COPY . /app
 
-ENTRYPOINT ["/app/scripts/entrypoint.sh"]
+ENTRYPOINT ["sh","/app/scripts/entrypoint.sh"]
 
 CMD ["python3", "app.py"]
